@@ -190,3 +190,75 @@ top players style
     margin-left: 10px;
     font-weight: 400;
 }
+
+/* ------------------
+    media quaries
+------------------ */
+/* mobile devices */
+@media only screen and (max-width:688px){
+    header{
+        width: 100%;
+        height: 200px;
+    }
+    .logo{
+        margin-left: 1px;
+    }
+    nav{
+        display: block;
+    }
+    .right-nav{
+        margin-right: -510px;
+    }
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        height: 200px;
+    }
+    .logo{
+        margin-left: 1px;
+    }
+    nav{
+        display: block;
+    }
+    .right-nav{
+        margin-right: -510px;
+    }
+    .section-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+    .blog{
+        justify-content: center;
+        align-items: center;
+    }
+}
